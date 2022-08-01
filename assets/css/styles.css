@@ -1,0 +1,622 @@
+@font-face {
+    font-family: Urbanist;
+    src: url(../fonts/Urbanist-Regular.ttf) format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+
+@font-face {
+    font-family: Urbanist;
+    src: url(../fonts/Urbanist-Bold.ttf) format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Urbanist, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: inline;
+}
+
+a>button {
+    background-color: orange;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #333;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 5px;
+    background-color: #fac517;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* Navigasi */
+nav {
+    background-color: white;
+    padding: 22px;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 2px rgba(50, 50, 50, .4);
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#img-1,
+li>span {
+    height: 20px;
+    float: left;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+#btn-unduh {
+    margin: 0;
+    padding: 13px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* welcome splash */
+.welcome-splash {
+    height: 780px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-left {
+    flex: 10%;
+    padding: 150px 0 10px 200px;
+}
+
+.flex-right {
+    flex: 10%;
+    padding: 10px;
+}
+
+.welcome-splash ul li {
+    display: inline;
+}
+
+.flex-left>h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    width: 500px;
+    padding-left: 200px;
+}
+
+.p-t {
+    width: 400px;
+    padding-left: 200px;
+    font-size: 1.3rem;
+}
+
+.s-1 {
+    color: #ef3f6e;
+}
+
+.buttons {
+    padding: 0 0 10px 190px;
+    cursor: pointer;
+}
+
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: black;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.openbtn:hover {
+    color: orange;
+}
+
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+/* FAQ */
+#faq {
+    /* height: 200px; */
+    font-size: 20px;
+    background-color: #fac517;
+    text-align: center;
+    padding: 100px 250px;
+}
+
+.container>h3 {
+    color: #333;
+    font-size: 30px;
+}
+
+
+/* Benefit */
+#benefit {
+    height: 650px;
+    margin: 0;
+    padding: 0 0 150px 150px;
+}
+
+#benefit h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+#benefit ul li {
+    line-height: 2;
+}
+
+#benefit img {
+    padding-top: 100px;
+}
+
+#buttons {
+    display: inline;
+    list-style-type: none;
+}
+
+
+/* Testimoni */
+#testimoni {
+    background-color: rgba(236, 236, 236, 0.4);
+    padding: 100px;
+}
+
+#testimoni h3 {
+    text-align: center;
+}
+
+#p-ulas {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 10%;
+    height: 150px;
+    border-color: rgba(112, 112, 112, 0.4);
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px 50px 10px 50px;
+}
+
+.testiquote,
+.testiimage {
+    padding-top: 13px;
+    color: #fac517;
+    font-size: 30px;
+}
+
+.testiblock,
+.testiname {
+    width: 80%;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.testiimage>img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.testiname h4 {
+    color: orange;
+    line-height: 0;
+}
+
+.testiname p {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    font-size: 12px;
+}
+
+/* Tentang kami */
+#tentangkami {
+    padding: 100px 300px;
+    /* background-color: aqua; */
+}
+
+#tentangkami h1 {
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 2px solid #fac517;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fac517;
+}
+
+/* Footer */
+footer {
+    background-color: #fac517;
+    padding: 50px 300px;
+    font-weight: 500;
+}
+
+footer .column {
+    border: none;
+}
+
+.column p {
+    line-height: 1.5;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    line-height: 2;
+}
+
+hr {
+    margin-top: 100px;
+    width: 90%;
+}
+
+.copyright {
+    /* padding-top: 130px; */
+    text-align: center;
+}
+
+/* Mobile screen size */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    a>button {
+        font-size: 12px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px 50px 0 50px;
+        width: 150px;
+    }
+
+
+    .jumbotron {
+        font-size: 14px;
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav li {
+        margin-right: 5px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    #img-1,
+    li>span {
+        padding-top: 5px;
+    }
+
+    .sidebar a {
+        font-size: 17px;
+    }
+
+    /* Welcome splash */
+    .welcome-splash {
+        height: 650px;
+    }
+
+    .flex-left {
+        flex: 100%;
+        padding: 0;
+    }
+
+    .flex-right {
+        flex: 100%;
+        padding: 0;
+    }
+
+    .flex-left>h1 {
+        font-size: 1.5rem;
+        width: auto;
+        padding: 20px 70px 5px 70px;
+        text-align: center;
+    }
+
+    .p-t {
+        font-size: 0.9rem;
+        width: auto;
+        padding: 0 70px;
+        text-align: center;
+    }
+
+    .buttons {
+        padding: 20px 10px 0 10px;
+        width: auto;
+        text-align: center;
+    }
+
+    .flex-right>img {
+        height: 300px;
+        padding: 0 30px 0 80px;
+    }
+
+    /* Faq */
+
+    #faq {
+        padding: 40px 30px;
+        font-size: 0.8rem;
+        text-align: left;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /* Benefit */
+    #benefit {
+        font-size: 14px;
+        padding: 30px;
+        margin: 0;
+        height: 500px;
+    }
+
+    #benefit h1 {
+        font-size: 1.3rem;
+        width: 290px;
+        color: orange;
+        padding-left: 10px;
+    }
+
+    #benefit ul li {
+        width: 280px;
+    }
+
+    .benefit-image img {
+        display: none;
+    }
+
+    #benefit img {
+        padding: 0;
+        padding-right: 130px;
+    }
+
+    /* Testimoni */
+    #testimoni {
+        padding: 30px 20px 80px 20px;
+    }
+
+    .column {
+        flex: 100%;
+        margin: 0 10px 0 10px;
+    }
+
+    .testiquote {
+        font-size: 13px;
+    }
+
+    .testiblock {
+        font-size: 13px;
+        width: 150px;
+    }
+
+    .testiimage img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .testiname {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    /* Tentang Kami */
+    #tentangkami {
+        padding: 30px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 5px;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+}
+
+
+/* laptop screen size */
+@media (min-width:1200px) {
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #fa {
+        display: none;
+    }
+
+    /* welcome splash */
+    .welcome-splash {
+        height: 700px;
+    }
+
+    .flex-left {
+        flex: 10%;
+        padding: 150px 0 10px 0;
+    }
+
+    .flex-right {
+        flex: 10%;
+        padding: 0 50px 0 0;
+        margin-right: 30px;
+    }
+
+    /* benefit */
+    #benefit {
+        height: 600px;
+    }
+
+    #benefit ul,
+    #benefit h1 {
+        padding-left: 70px;
+    }
+
+    .benefit-image img {
+        padding-left: 100px;
+        height: 500px;
+    }
+
+
+    /* Testimoni */
+    .testiimage img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .testiname {
+        width: 130px;
+        font-size: 12px;
+    }
+
+    .column {
+        padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px;
+    }
+}
+
+/* desktop screen size */
+@media (min-width:1800px) {
+
+    #fa {
+        display: none;
+    }
+
+    .flex-left {
+        flex: 10%;
+        padding: 150px 0 10px 250px;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #fac517;
+        padding: 70px 300px;
+        font-weight: 500;
+    }
+}
