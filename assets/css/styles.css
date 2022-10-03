@@ -46,11 +46,11 @@ button:hover {
 }
 
 .jumbotron {
-    font-size: 20px;
+    font-size: 17px;
     padding: 5px;
     background-color: #fac517;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .container {
